@@ -40,8 +40,8 @@ if ([string]::IsNullOrEmpty($packerBinFolder)) {
     $packerBinFolder = $env:TEMP
 }
 
-$packerTemplate = Join-Path -Path $basePath -ChildPath 'images\win\vs2017-Server2016-Azure.json'
-$installedSoftwarePath = Join-Path -Path $basePath -ChildPath 'images\win\InstalledSoftware.md'
+$packerTemplate = Join-Path -Path $basePath -ChildPath 'images\win\windows2019.json'
+$installedSoftwarePath = Join-Path -Path $basePath -ChildPath 'images\win\Windows2019-Readme.md'
 
 try {
 
