@@ -15,7 +15,7 @@ jobs:
 - job: 'BuildScripts'
   displayName: 'Build Scripts'
   pool:
-    vmImage: 'win1803'
+    vmImage: 'windows-latest'
   workspace:
     clean: all
 
@@ -25,7 +25,7 @@ jobs:
     inputs:
       PathtoPublish: build
       ArtifactName: build
-  
+
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifact: deploy'
     inputs:
